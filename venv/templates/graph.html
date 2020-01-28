@@ -36,6 +36,28 @@ body {
 
 }
 
+input {
+	width: 30%;
+	margin-bottom: 10px;
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus {
+     box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
+     }
 
   </style>
 <style>
@@ -64,26 +86,28 @@ body {
 
 <div class="row">
   <div class="column">
-    <img src="graph1.png" alt="graph" style="width:100%" height="500px">
+    <img src="/static/graph1.png" alt="graph" style="width:100%" height="500px">
   </div>
   <div class="column">
-    <img src="graph2.png" alt="graph" style="width:100%"height="500px">
+    <img src="/static/graph2.png" alt="graph" style="width:100%"height="500px">
   </div>
   <div class="column">
-    <img src="graph6.png" alt="graph" style="width:100%"height="500px">
+    <img src="/static/graph6.png" alt="graph" style="width:100%"height="500px">
   </div>
 </div>
 <div class="row">
   <div class="column">
-    <img src="graph4.png" alt="graph" style="width:100%"height="500px">
+    <img src="/static/graph4.png" alt="graph" style="width:100%"height="500px">
   </div>
   <div class="column">
-    <img src="graph5.png" alt="graph" style="width:100%"height="500px">
+    <img src="/static/graph5.png" alt="graph" style="width:100%"height="500px">
   </div>
   <div class="column">
-    <img src="graph3.png" alt="graph" style="width:100%"height="500px">
+    <img src="/static/graph3.png" alt="graph" style="width:100%"height="500px">
   </div>
 </div>
-
+<form action="/"  >
+  <input type="submit" value="Go Back">
+</form>
 </body>
 </html>

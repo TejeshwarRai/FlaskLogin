@@ -1,4 +1,3 @@
-"""Flask Login Example and instagram fallowing find"""
 import os
 import numpy as np
 import flask
@@ -6,7 +5,7 @@ import pickle
 # from waitress import serve
 from flask import Flask, url_for, render_template, request, redirect, session
 from flask_sqlalchemy import SQLAlchemy
-# from instagram import getfollowedby, getname
+
 
 
 app = Flask(__name__)
@@ -57,9 +56,9 @@ def login():
 				session['logged_in'] = True
 				return redirect(url_for('home'))
 			else:
-				return 'Dont Login'
+				return render_template('wrongcred.html')
 		except:
-			return "Dont Login"
+			return render_template('wrongcred.html')
 
 @app.route('/register/', methods=['GET', 'POST'])
 def register():
@@ -100,5 +99,9 @@ if __name__ == '__main__':
 	app.debug = True
 	db.create_all()
 	app.secret_key = "123"
-	app.run(host='0.0.0.0')
+	app.run(host='127.1.1.1')
+
+# if __name__ == "__main__":
+# 	# app.run(debug=True) #replaced with code below to run it using waitress
+#     serve(app, host='127.0.0.1', port=5000)
 	

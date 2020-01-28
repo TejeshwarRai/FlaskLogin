@@ -83,9 +83,9 @@ input:focus {
 
 <h2>Register</h2>
 <form action="/register/" method="POST">
-  <input type="username" name="username" placeholder="Username">
-  <input type="password" name="password" placeholder="Password">
-  <input type="submit" value="Log in">
+  <input type="username" name="username" placeholder="Username" required>
+  <input type="password" name="password" placeholder="Password" minlength="8" required>
+  <input type="submit" value="Register">
 </form>
 {% endif %}
 {% endblock %}
